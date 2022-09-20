@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState, useRef } from "react";
+import Card from "./card";
+import imagesArray from './data';
+import './app.scss';
+
 
 const imagesArray = [
   {
@@ -36,25 +39,53 @@ const imagesArray = [
   },
 ]
 
-function App() {
+
+function swap(array, i, j) {
+  const temp = array[i];
+  array[i] = array[j];
+  array[j] = temp;
+}
+function shuffleCards(array) {
+  const length = array.length;
+  for(let i = length; i > 0; i--) {
+    const randomIndex = Math.floor(Math.random() * i);
+    const currentIndex = i - 1;
+    swap(array, currIndex, randomIndex)
+  }
+    return array;
+}
+
+export default function App( { imagesArray} ) {
+  const [cards, setCards] = useState(
+    () => shuffleCards(imagesArray.concat(imagesArray))
+  );
+
+  const handleClick = (index) => {
+
+  };
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>
+        <h3>Play the game</h3>
+        <div>
+        Select two cards with same content consequtively to make them vanish
+        </div>
+        </header>
+        <div className="container">
+          {cards.map((card, index) => {
+          return (
+            <Card 
+              key={index}
+              card={card}
+              index={index}
+              onClick={handleCardClick}
+              />
+          );
+          })}
+        </div>
     </div>
-  );
+  )
 }
 
 export default App;
