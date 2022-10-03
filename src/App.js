@@ -44,6 +44,22 @@ const imagesArray = [
     type: "robot",
     image: require(`./images/robot8.png`)
   },
+  {
+    type: "robottwo",
+    image: require(`./images/robot2.png`)
+  },
+  {
+    type: "robotthree",
+    image: require(`./images/robot3.png`)
+  },
+  {
+    type: "babyyoda",
+    image: require(`./images/babyyoda.png`)
+  },
+  {
+    type: "mandalorian",
+    image: require(`./images/mandalorian.png`)
+  },
 ];
 
 
@@ -152,7 +168,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h3>Play the game</h3>
+        <h3>Play The Game</h3>
         <div>
         Select two cards with same content consequtively to make them vanish
         </div>
@@ -197,7 +213,7 @@ export default function App() {
           aria-describedby="alert-dialog-description"
         >
           <DialogTitle id="alert-dialog-title">
-            Hurray!!! You completed the challenge
+            Congrats! You completed the challenge!
           </DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
