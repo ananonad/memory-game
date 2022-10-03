@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames"
-import trolls from "./images/trolls.png";
+import starwars from "./images/starwars.png";
 import "./card.scss";
 
 
@@ -17,10 +17,10 @@ return (
     onClick={handleClick}
     >
     <div className="card-face card-font-face">
-        <img src={trolls} alt="trolls" />
+        <img src={starwars} alt="starwars" />
     </div>
     <div className="card-face card-back-face">
-        <img src={card.image} alt="trolls" />
+        <img src={card.image} alt="starwars" />
     </div>
     </div>
 );

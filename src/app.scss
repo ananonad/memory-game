@@ -2,16 +2,21 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+ 
   .App {
     position: absolute;
     width:100%;
     height: 100%;
+    background-image: url("https://images.ctfassets.net/177v1kh0db6l/1CfpfdU66FdG4clvtrlCEg/b250352891ba0e4804c5932b24f5a7a8/21011520_StarWarsProject_Snowdrop_Website_Starfield_1080x608.png");
+    background-size: cover;
   
     header {
+      font-family: 'Syne Mono', monospace;
       position: relative;
       width: 100%;
       text-align: center;
       margin-bottom: 8px;
+      color: white;
   
       > div {
         font-size: 15px;
@@ -39,7 +44,9 @@
   
       .restart {
         display: flex;
-        justify-content: center
+        justify-content: center;
+        background-color: black;
+
       }
     }
   
@@ -49,13 +56,13 @@
       box-shadow: 0 0 4px 4px #DEDEDE; 
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       justify-items: center;
       align-items: stretch;
       gap: 1rem;
       margin: 0 auto;
-      width: 360px;
-      height: 300px;
+      width: 600px;
+      height: 650px;
       perspective: 100%;
       max-width: 720px;
     }

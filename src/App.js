@@ -13,36 +13,36 @@ import './app.scss';
 
 const imagesArray = [
   {
-    type: "Biggie",
-    image: require(`./images/Biggie.png`)
+    type: "first",
+    image: require(`./images/1.png`)
   },
   {
-    type: "Branch",
-    image: require(`./images/Branch.png`)
+    type: "skywalker",
+    image: require(`./images/skywalker2.png`)
   },
   {
-    type: "Bridget",
-    image: require(`./images/Bridget.png`)
+    type: "third",
+    image: require(`./images/3.png`)
   },
   {
-    type: "DjSuki",
-    image: require(`./images/DjSuki.png`)
+    type: "fourth",
+    image: require(`./images/4.png`)
   },
   {
-    type: "GuyDiamond",
-    image: require(`./images/GuyDiamond.png`)
+    type: "yoda",
+    image: require(`./images/Yoda5.png`)
   },
   {
-  type: "Poppy",
-  image: require(`./images/Poppy.png`)
+  type: "sixth",
+  image: require(`./images/6.png`)
   },
   {
-    type: "Prince",
-    image: require(`./images/Prince.png`)
+    type: "leia",
+    image: require(`./images/leia7.png`)
   },
   {
-    type: "Smidge",
-    image: require(`./images/Smidge.png`)
+    type: "robot",
+    image: require(`./images/robot8.png`)
   },
 ];
 
